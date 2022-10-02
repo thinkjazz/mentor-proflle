@@ -2,15 +2,13 @@ import React from 'react';
 import 'antd/dist/antd.css';
 import '../assets/style.css';
 import { CloudUploadOutlined } from '@ant-design/icons';
-import { Card, Tag, Space, Typography, Button } from 'antd';
+import { Card, Tag, Space, Typography, Button, Col, Row, Divider } from 'antd';
 
-const { Meta } = Card;
 const { Text } = Typography;
 
 const MentorPhotoBlock = () => (
   <Card
     hoverable
-    style={{ width: 300 }}
     cover={
       <img
         alt="example"
@@ -18,17 +16,19 @@ const MentorPhotoBlock = () => (
       />
     }
   >
-    <Meta
-      title={<Text type="success">Бесплатное занятие</Text>}
-      description={[
-        <div>
-          <Button type="primary" block>
-            Оставить заявку
-          </Button>
-          <Button block>Бесплатное занятие</Button>
-        </div>,
-      ]}
-    />
+    <Divider>Работа с ментором</Divider>
+    <div>
+      <Space direction="vertical" size="small" style={{ display: 'flex' }}>
+        <Row>
+          <Col span={24}>
+            {' '}
+            <Button type="primary" size="large" block>
+              Оставить заявку
+            </Button>
+          </Col>
+        </Row>
+      </Space>
+    </div>
   </Card>
 );
 
