@@ -5,8 +5,7 @@ import MentorHelp from './Components/MentorHelp.jsx';
 import WorkExperience from './Components/WorkExperience.jsx';
 import MentorPhotoBlock from './Components/MentorPhotoBlock.jsx';
 import MentorPrice from './Components/MentorPrice.jsx';
-import { Card, Space } from 'antd';
-import { Col, Row } from 'antd';
+import { Card, Space, Col, Row } from 'antd';
 
 ReactDOM.render(
   <div>
